@@ -61,8 +61,8 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 |---|---|
 | Descripción  | Usuario común del videoclub.  |
 | Características  |  |
-| Relaciones | - Registrar un alquiler o una reserva de alquiler  |
-| Referencias |- Proporciona sus datos personales <br>- Reservar una película  <br> - Alquilar una película <br> - Seleccionar una película.|   
+| Relaciones | - Registrar un alquiler o una reserva de alquiler.  |
+| Referencias |- Proporcionar sus datos personales. <br>- Reservar una película.  <br> - Alquilar una película. <br> - Seleccionar una película. <br> - Devolver una película.|   
 |  Notas |   |
 | Autor  | Carlos Antonio Díaz Galán |
 |Fecha | 19/11/2024 |
