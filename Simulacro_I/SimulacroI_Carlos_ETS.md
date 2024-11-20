@@ -3,8 +3,10 @@
 # Ejercicio Simulacro I.
 
 ## Ejercicio 1 Tienda de Comercio Elecrónico.
+
 <details>
     <summary>Clic para ver el contenido</summary>
+    
 ### Una tienda en línea necesita un sistema que permita a los clientes comprar productos a través de un sitio web.
 
 Como parte de los requisitos funcionales, el sistema debe incluir los siguientes procesos:
