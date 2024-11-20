@@ -3,7 +3,8 @@
 # Ejercicio Simulacro I.
 
 ## Ejercicio 1 Tienda de Comercio Elecrónico.
-
+<details>
+    <summary>Clic para ver el contenido</summary>
 ### Una tienda en línea necesita un sistema que permita a los clientes comprar productos a través de un sitio web.
 
 Como parte de los requisitos funcionales, el sistema debe incluir los siguientes procesos:
@@ -28,11 +29,14 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 
 ---
 
-
+</details>
 
 ## Ejercicio 2 
 
-### REaliza la especificación de casos de uso de la siguiente imagen.
+<details>
+    <summary>Clic para ver el contenido</summary>
+   
+### Realiza la especificación de casos de uso de la siguiente imagen.
 
 <img src="alguiler-pelicula-cu.jpg">
 <br>
@@ -46,6 +50,9 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 
 ### Actores.
 
+<details>
+    <summary>Clic para ver el contenido</summary>
+   
 #### Cliente.
 
 |  Actor | Cliente |
@@ -99,10 +106,13 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 | _Nombre_  | _Descripción_  | _Tipo_ |
 | | |
 
-
+</details>
 
 ### Casos de uso.
 
+<details>
+    <summary>Clic para ver el contenido</summary>
+   
 #### Proporcionar datos personales.
 
 
@@ -239,3 +249,6 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 | Notas            |                          |
 | Autor            | Carlos Antonio Díaz Galán |
 | Fecha            | 19/11/2024               |
+
+</details>
+    
