@@ -127,7 +127,7 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
   | Pre-condiciones | El cliente tiene que disponer de documentos para proporcionar sus datos personales.  |  
   | Post-condiciones  | Aceptar las condiciones en la política del videoclub.  |  
   |  Requerimientos | Datos personales.  |
-  |  Notas |  _Notas adicionales_ |
+  |  Notas |  |
   | Autor  | Carlos Antonio Díaz Galán |
   |Fecha | 19/11/2024 |
 
@@ -139,10 +139,10 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 | Actor            | Cliente, administrador.           |
 | Descripción      | Permite registrar un alquiler de una o varias películas solicitada por el cliente. |
 | Flujo básico     | 1. El administrador selecciona la película solicitada por el cliente.<br>2. Se verifica la disponibilidad de la película.<br>3. Se registra el alquiler y se actualiza el estado dela película.<br>4. El sistema genera una fecha de devolución. |
-| Pre-condiciones  | El usuario debe tener una cuenta activa y la película debe estar disponible. |
+| Pre-condiciones  | El usuario debe tener una cuenta activa y la película debe estar disponible.Por último, el cliente debe seleccionar previamente una película `<include>`. |
 | Post-condiciones | La película queda registrada como alquilada y la fecha de devolución se establece. |
 | Requerimientos   | Sistema de registro de alquileres y disponibilidad de la película. |
-| Notas            |                          |
+| Notas            | En este caso, para alquilar uno o varios títulos , debe seleccionarse `<include>`.                          |
 | Autor            | Carlos Antonio Díaz Galán |
 | Fecha            | 19/11/2024               |
 
@@ -153,9 +153,37 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 | Fuentes          | Este caso de uso se sustenta gracias al [documento](). |
 | Actor            | Cliente, administrador.           |
 | Descripción      | Permite realizar una reserva de un próximo título o uno que esté reservado. |
-| Flujo básico     | 1. El administrador revisa los alquileres activos.<br>2. Se identifican los alquileres próximos a vencer.<br>3. Se genera una reserva con los datos del cliente. |
-| Pre-condiciones  | Debe haber alquileres activos en el sistema. |
+| Flujo básico     | 1. El cliente <b>selecciona</b> una o varias películas previamente.<br>2. El administrador revisa los alquileres activos.<br>3. Se identifican los alquileres próximos a vencer.<br>4. Se genera una reserva con los datos del cliente. |
+| Pre-condiciones  | Debe haber alquileres activos en el sistema y que el usuario <b>seleccione</b> uno o varias películas `include`. |
 | Post-condiciones | El usuario recibe una fecha con la reserva. |
+| Requerimientos   | Contacto del usuario |
+| Notas            | En este caso, para reservar uno o varios títulos , debe seleccionarse `<include>`.                      |
+| Autor            | Carlos Antonio Díaz Galán |
+| Fecha            | 29/10/2024               |
+
+#### Devolver película
+
+| Caso de Uso CU.3 | Reservar película              |
+|------------------|-----------------------------------|
+| Fuentes          | Este caso de uso se sustenta gracias al [documento](). |
+| Actor            | Cliente.           |
+| Descripción      | El cliente está en la obligación de la devolución. |
+| Flujo básico     | 1. El cliente <b>selecciona</b> una o varias películas previamente.<br>2. Alquila una película <br>3. Devuelve la película al terminar el tiempo acordado. 
+| Pre-condiciones  | Debe haberse realizado al menos, un alquiler. |
+| Post-condiciones | El usuario recibe una fecha con la reserva y devolución. |
+| Requerimientos   | Contacto del usuario |
+| Notas            | En este caso, para devolver uno o varios títulos alquilados, debe haberse producido obligatoriamente uno o varios alquileres previos `<include>`.                        |
+| Autor            | Carlos Antonio Díaz Galán |
+| Fecha            | 29/10/2024               |
+
+#### Seleccionar película
+
+| Caso de Uso CU.3 | Reservar película              |
+|------------------|-----------------------------------|
+| Fuentes          | Este caso de uso se sustenta gracias al [documento](). |
+| Actor            | Cliente.           |
+| Descripción      | Permite seleccionar una o varias películas para alquilar. |
+| Flujo básico     | 1. El cliente visualiza el catálogo.<br>2. El cliente selecciona al menos, una película disponible.<br>3. El cliente alquila la película. |
 | Requerimientos   | Contacto del usuario |
 | Notas            |                          |
 | Autor            | Carlos Antonio Díaz Galán |
@@ -173,6 +201,21 @@ Diseña un diagrama de casos de uso que represente las interacciones entre el cl
 | Post-condiciones | Se actualiza las películas. |
 | Requerimientos   | Contacto entre el videoclub y el proveedor. |
 | Notas            |                          |
+| Autor            | Carlos Antonio Díaz Galán |
+| Fecha            | 19/11/2024               |
+
+#### Abastecer películas según existencias.
+
+| Caso de Uso CU.4 | Abastecer películas según existencias.               |
+|------------------|-----------------------------------|
+| Fuentes          | Este caso de uso se sustenta gracias al [documento]() |
+| Actor            | Proveedor.           |
+| Descripción      | El proveedor abastece de títulos según hayan existencias a los videoclubs. |
+| Flujo básico     | 1. El administrador solicita uno o varios títulos al proveedor.<br>2. El proveedor comprueba disponibilidad. <br>3. Se abastece películas. |
+| Pre-condiciones  | Debe haber existencias. |
+| Post-condiciones | Se actualiza las películas. |
+| Requerimientos   | Contacto entre el videoclub y el proveedor. |
+| Notas            | En este caso, la función de abastecer según existencias es necesaria para poder abastecer y se cumple siempre que el Administrador solicite un pedido `<extend>`.                     |
 | Autor            | Carlos Antonio Díaz Galán |
 | Fecha            | 19/11/2024               |
 
